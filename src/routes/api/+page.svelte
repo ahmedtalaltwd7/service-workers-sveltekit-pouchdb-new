@@ -5,16 +5,7 @@
 
 
     
-    import { onMount } from 'svelte';
-    
-   
-    
 
-onMount(async () => {
-    window.global = window
-    const { greet } = await import('../lib')
-    greet() 
-})
 
 
     export let data;
@@ -23,13 +14,12 @@ onMount(async () => {
     const b = data.results2.results2.results;
    console.log(a);
    console.log(b);
-   
 </script>
 
 <div class="twd">twd</div>
 <div class="twd2">twd2</div>
 
-<h1><a href="/api">api</a></h1>
+
 
 <h1>result</h1>
 
